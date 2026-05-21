@@ -1,0 +1,187 @@
+:host {
+  display: block;
+  min-height: 100%;
+  padding: 1.5rem;
+  background: #eef2ff;
+  color: #0f172a;
+}
+
+.dashboard-shell {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.hero-card,
+.activity-card {
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+  padding: 1.75rem;
+}
+
+.hero-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: #2563eb;
+  margin: 0 0 0.75rem;
+}
+
+.subtitle {
+  color: #475569;
+  line-height: 1.75;
+  max-width: 42rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.btn-primary,
+.btn-secondary {
+  border: none;
+  border-radius: 999px;
+  padding: 0.85rem 1.4rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.btn-secondary {
+  background: rgba(37, 99, 235, 0.1);
+  color: #1d4ed8;
+}
+
+.widgets-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.widget-card {
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  border: 1px solid #e2e8f0;
+}
+
+.widget-card h2 {
+  margin: 0 0 0.65rem;
+  font-size: 1rem;
+  color: #334155;
+}
+
+.value {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  color: #111827;
+}
+
+.activity-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: baseline;
+  margin-bottom: 1rem;
+}
+
+.activity-header h2 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.activity-header span {
+  color: #64748b;
+}
+
+.activity-table {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1.2fr 1.5fr 1fr 0.9fr;
+  gap: 1rem;
+  padding: 0.95rem 1rem;
+  align-items: center;
+  border-radius: 0.85rem;
+}
+
+.row.header {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #475569;
+  background: #f8fafc;
+  text-transform: uppercase;
+}
+
+.row:not(.header) {
+  background: #f8fafc;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.badge-warning {
+  background: #fef3c7;
+}
+
+.badge-success {
+  background: #dcfce7;
+}
+
+.badge-info {
+  background: #dbeafe;
+}
+
+@media (max-width: 960px) {
+  .widgets-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-card,
+  .activity-card {
+    padding: 1.25rem;
+  }
+
+  .hero-actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .row {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .row.header {
+    grid-template-columns: 1fr;
+  }
+}
